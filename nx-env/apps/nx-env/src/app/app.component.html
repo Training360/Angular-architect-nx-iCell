@@ -1,1 +1,27 @@
-<app-nx-welcome></app-nx-welcome> <router-outlet></router-outlet>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-striped">
+        <thead>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Cat.</th>
+          <th>Origin</th>
+        </thead>
+
+        <tbody>
+          @for (product of products$ | async; track $index) {
+            <tr>
+              <td>{{ product.id }}</td>
+              <td>{{ product.name }}</td>
+              <td>{{ product.price }}</td>
+              <td>{{ product.category }}</td>
+              <td>{{ product.origin }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
