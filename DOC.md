@@ -265,7 +265,7 @@ import { Component } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { UserService } from "shared/data-access-user/src/lib/user.service";
 @Component({
-  selector: "angular-mf-login-entry",
+  selector: "app-login-entry",
   standalone: true,
   imports: [CommonModule, FormsModule],
   template: `
@@ -321,7 +321,8 @@ export class RemoteEntryComponent {
 
 ### Dashboard Application
 
-- IMPORTANT UPDATES [entry.component.ts](./angular-mf/login/src/app/remote-entry/entry.component.ts), [app.component.ts](./angular-mf/dashboard/src/app/app.component.ts):
+- IMPORTANT UPDATES [entry.component.ts](./angular-mf/login/src/app/remote-entry/entry.component.ts), [app.component.ts](./angular-mf/dashboard/src/app/app.component.ts)  
+- Change the import paths based on the tsconfig.base.json file:
 
 ```typescript
 import { UserService } from "@angular-mf/data-access-user";

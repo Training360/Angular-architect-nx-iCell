@@ -1,0 +1,9 @@
+{
+  "name": "nx-df-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/nx-df-e2e/src",
+  "implicitDependencies": ["nx-df"],
+  "// targets": "to see all targets run: nx show project nx-df-e2e --web",
+  "targets": {}
+}
