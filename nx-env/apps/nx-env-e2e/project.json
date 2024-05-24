@@ -1,0 +1,9 @@
+{
+  "name": "nx-env-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/nx-env-e2e/src",
+  "implicitDependencies": ["nx-env"],
+  "// targets": "to see all targets run: nx show project nx-env-e2e --web",
+  "targets": {}
+}
