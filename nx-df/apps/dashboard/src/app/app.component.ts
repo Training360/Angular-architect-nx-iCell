@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
+import { UserService } from '@nx-df/data-access-user';
 
 @Component({
   standalone: true,
@@ -10,5 +12,11 @@ import { NxWelcomeComponent } from './nx-welcome.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+
+  userService = inject(UserService);
+
+  isLoggedIn = toSignal( this.userService.isUserLoggedIn$ );
+
   title = 'dashboard';
+
 }

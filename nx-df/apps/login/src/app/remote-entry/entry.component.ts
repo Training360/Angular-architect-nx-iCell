@@ -1,7 +1,8 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { FormsModule } from "@angular/forms";
-import { UserService } from "shared/data-access-user/src/lib/user.service";
+import { UserService } from "@nx-df/data-access-user";
+
 @Component({
   selector: "app-login-entry",
   standalone: true,

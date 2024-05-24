@@ -371,9 +371,10 @@ module.exports = {
       loadRemoteModule('login', './Routes').then((m) => m.remoteRoutes),
   },
 ```
+- Stop the login application.
 - Run: `npx nx serve dashboard --devRemotes=login`
 
-- Watch the service from the dashboard:
+- Watch the service from the dashboard (use the repo name instead of @p-df):
 ```typescript
 import { UserService } from "@p-df/shared/data-access-user";
 // ...
